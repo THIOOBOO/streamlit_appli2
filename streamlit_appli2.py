@@ -29,8 +29,8 @@ basic_info = {
 basic_info
 
 # Create a profiling report
-# profile = ProfileReport(df, title='Financial Inclusion Profiling Report')
-# profile.to_file("financial_inclusion_report.html")
+profile = ProfileReport(df, title='Financial Inclusion Profiling Report')
+profile.to_file("financial_inclusion_report.html")
 
 # Drop columns that won't be useful for prediction
 df.drop(['uniqueid', 'country', 'year'], axis=1, inplace=True)
