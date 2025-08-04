@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-# import matplotlib.pyplot as plt
-#import seaborn as sns
+
 #from ydata_profiling import ProfileReport
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -9,10 +8,6 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.preprocessing import LabelEncoder
 import pickle
 import streamlit as st
-
-import streamlit as st
-import pandas as pd
-import pickle
 
 # Load the dataset
 df = pd.read_csv('Financial_inclusion_dataset.csv')
