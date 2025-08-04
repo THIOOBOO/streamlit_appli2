@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-#from ydata_profiling import ProfileReport
+from ydata_profiling import ProfileReport
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
@@ -24,8 +24,8 @@ basic_info = {
 basic_info
 
 # Create a profiling report
-#profile = ProfileReport(df, title='Financial Inclusion Profiling Report')
-#profile.to_file("financial_inclusion_report.html")
+profile = ProfileReport(df, title='Financial Inclusion Profiling Report')
+profile.to_file("financial_inclusion_report.html")
 
 # Drop columns that won't be useful for prediction
 df.drop(['uniqueid', 'country', 'year'], axis=1, inplace=True)
